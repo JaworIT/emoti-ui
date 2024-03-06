@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .anim-effect {
+        @apply transition duration-250 ease-in-out;
+    }
+
+    .anim-pop-in {
+        @apply transition-all duration-250 ease-out;
+    }
+
+    .anim-pop-out {
+        @apply transition-all duration-250 ease-in;
+    }
+
+    .anim-move-in {
+        @apply transition-all duration-400 ease-out;
+    }
+
+    .anim-move-out {
+        @apply transition-all duration-300 ease-in;
+    }
+
+    .grid-12 {
+        @apply grid grid-cols-12 gap-[12px] xs:gap-[18px] s:gap-[24px];
+    }
+
+    .icon-xs {
+        @apply h-icon-extra-small text-icon-extra-small;
+    }
+
+    .icon-s {
+        @apply h-icon-small text-icon-small;
+    }
+
+    .icon-m {
+        @apply h-icon-medium text-icon-medium;
+    }
+
+    .icon-l {
+        @apply h-icon-large text-icon-large;
+    }
+
+    .focus-outline {
+        @apply outline outline-2 outline-offset-1 outline-strong !important;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+        @apply focus-outline rounded-s;
+    }
+
+    ::-webkit-resizer {
+        display: none;
+    }
+
+    @supports not selector(::-webkit-resizer) {
+        .custom-resizer {
+            display: none !important;
+        }
+    }
+
+    select {
+        appearance: none;
+    }
+}

@@ -5,6 +5,17 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.idea
+
+.storybook/
+.storybook-static/
+storybook-static/
+
+# Wygenerowane pliki Storybooka
+.storybook/**/*.js
+.storybook/**/*.js.map
+.storybook/**/*.txt
+.rollup.cache/
 
 # testing
 /coverage
@@ -12,7 +23,7 @@
 # next.js
 /.next/
 /out/
-
+/dist/
 # production
 /build
 
